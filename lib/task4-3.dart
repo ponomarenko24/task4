@@ -5,18 +5,19 @@ void main() {
   guitarMusician.play();
 }
 
-mixin Playing {
-  void play();
-}
-
-class Piano with Playing {
+mixin PlayingPiano {
   void play() {
-    print("playing piano");
+    print("playing piano...");
   }
 }
 
-class Guitar with Playing {
-  void play() {
-    print("playing guitar");
+mixin PlayingGuitar {
+    void play() {
+    print("playing guitar...");
   }
 }
+
+
+class Piano with PlayingPiano {}
+
+class Guitar with PlayingGuitar {}

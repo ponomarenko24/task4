@@ -8,8 +8,8 @@ void main() {
 }
 
 class Animal {
-  String type;
-  int age;
+  final String type;
+  final int age;
 
   Animal(this.type, this.age);
   Animal.origin(this.type) : this.age = 0;

@@ -8,9 +8,9 @@ void main() {
 }
 
 class Student {
-  String name;
-  int course;
-  String specialty;
+  final String name;
+  final int course;
+  final String specialty;
 
   Student(this.name, this.course, this.specialty);
 

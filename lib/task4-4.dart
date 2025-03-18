@@ -7,19 +7,17 @@ void main() {
 }
 
 abstract interface class Playable {
-  void play() {
-    print("playing ...");
-  }
+  void play(); 
 }
 
-class Soccer extends Playable {
+class Soccer implements Playable {
   @override
   void play() {
     print("playing soccer...");
   }
 }
 
-class Basketball extends Playable {
+class Basketball implements Playable {
   @override
   void play() {
     print("playing basketball...");

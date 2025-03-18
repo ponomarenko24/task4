@@ -20,8 +20,8 @@ void main() {
 }
 
 class Rectangle {
-  double width;
-  double height;
+  final double width;
+  final double height;
 
   Rectangle(this.width, this.height);
   @override
@@ -40,8 +40,8 @@ class Rectangle {
 }
 
 class RectangleEquitable extends Equatable {
-  double width;
-  double height;
+  final double width;
+  final double height;
 
   RectangleEquitable(this.width, this.height);
 
